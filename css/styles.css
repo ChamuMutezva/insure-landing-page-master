@@ -1,6 +1,69 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  color: #d7d4d4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'DM Serif Display', serif;
+}
+
+.primary-btn {
+  background: transparent;
+  color: #d7d4d4;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 15px 0;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  border: 2px solid #d7d4d4;
+}
+
+/* header */
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 15px;
+  align-items: center;
+}
+.hamburger-icon {
+  cursor: pointer;
+}
+.hamburger-icon:hover {
+  color: #eee;
+}
+.header-img {
+  display: block; /* to remove extra space under img, by default img is rendered inline*/
+  width: 100%;
+}
+.intro-text {
+  padding: 95px 20px;
+  text-align: center;
+  background-color: #2d2640;
+  background-image: url(../images/bg-pattern-intro-left-mobile.svg),
+    url(../images/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left top, bottom right;
+}
+.intro-text h1 {
+  font-size: 45px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+}
+.intro-text p {
+  margin: 20px 0;
+  line-height: 1.5;
 }
