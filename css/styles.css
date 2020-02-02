@@ -124,11 +124,11 @@ button.button {
     flex-direction: row;
   }
   main h1 {
-    margin: auto 5%;
+    margin: auto 3%;
     font-size: 5em;
-    /* width: 44%; */
+     width: 50%; 
     text-align: left;
-    padding-top: 3%;
+    padding-top: 6%;
   }
 
   hr {
