@@ -5,6 +5,10 @@
   font-size: 16px;
 }
 
+html,
+body {
+}
+
 body {
   font-family: 'Karla', sans-serif;
   color: #d7d4d4;
@@ -31,19 +35,26 @@ h6 {
   border: 2px solid #d7d4d4;
 }
 
-/* header */
+.hide {
+  display: none;
+  -webkit-transition: display 0.2s linear, opacity 0.2s linear;
+  -moz-transition: display 0.2s linear, opacity 0.2s linear;
+  -o-transition: display 0.2s linear, opacity 0.2s linear;
+}
+
+/* Header section */
 .header__logo {
   display: flex;
   justify-content: space-between;
   padding: 30px 15px;
   align-items: center;
 }
-.hamburger-icon {
+.hamburger-icon,
+.close-icon {
+  opacity: 1;
   cursor: pointer;
 }
-.hamburger-icon:hover {
-  color: #eee;
-}
+
 .header-img {
   display: block; /* to remove extra space under img, by default img is rendered inline*/
   width: 100%;
@@ -66,4 +77,99 @@ h6 {
 .intro-text p {
   margin: 20px 0;
   line-height: 1.5;
+}
+
+.nav-container {
+  position: relative;
+  height: 100%;
+}
+
+#desktop-nav {
+  display: none;
+}
+
+#desktop-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#desktop-nav .desktop-nav-item {
+  padding-right: 45px;
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(273, 4%, 51%);
+  text-transform: uppercase;
+}
+
+#desktop-nav .desktop-nav-item:last-child {
+  padding-right: 0;
+}
+
+#desktop-nav .nav-btn {
+  color: hsl(270, 9%, 17%);
+  border: 2px solid hsl(270, 9%, 17%);
+}
+
+#mobile-nav {
+  position: absolute;
+  top: 92px;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  opacity: 1;
+  background: #2b272f url(../images/bg-pattern-mobile-nav.svg) no-repeat right bottom;
+  text-align: center;
+}
+
+#mobile-nav ul {
+  list-style: none;
+}
+
+.mobile-nav-item {
+  margin: 40px 0;
+  font-size: 1.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mobile-nav-item .nav-btn {
+  width: 100%;
+  font-size: 15px;
+  padding: 15px;
+  margin: 0;
+}
+
+/* media queries */
+@media screen and (min-width: 600px) {
+  #desktop-nav {
+    display: block;
+  }
+
+  #desktop-nav .desktop-nav-item {
+    padding-right: 25px;
+  }
+
+  #desktop-nav .nav-btn {
+    padding: 10px;
+  }
+
+  .hamburger-icon,
+  .close-icon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .header__logo {
+    padding: 30px 100px;
+  }
+
+  #desktop-nav .desktop-nav-item {
+    padding-right: 45px;
+  }
+
+  #desktop-nav .nav-btn {
+    padding: 10px 25px;
+  }
 }
