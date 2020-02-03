@@ -10,17 +10,35 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  line-height: 1.6em;
+}
+
 h1, h2, h3, h4, h5 , h6 {
   font-family: "DM Serif Display", sans-serif;
 }
 
 /* Main section */
+hr {
+  width: 50%;
+  margin: auto;
+}
+
+.how-text h1 {
+  font-weight: 100;
+  line-height: 1;
+  margin-bottom: 8%;
+}
+
+.main__intro {
+  padding-top: 20%;
+}
 
 h1 {
   text-align: center; 
   font-weight: 700;
   font-size: 2.8em;
-  padding-top: 14%;
+  padding-top: 10%;
 }
 
 h3 {
@@ -31,7 +49,7 @@ h3 {
 .main__features {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 10% auto;
+  margin: 10% auto 35%;
   /* justify-items: center; */
 }
 
@@ -53,7 +71,7 @@ h3 {
   background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
   background-position: top right;
   background-repeat: no-repeat;
-  height: 75vh;
+  height: 60vh;
   color: white;
 }
 
@@ -88,21 +106,35 @@ button.button {
   p {
     font-size: 1.5em;
   }
+  .process img, .prices img, .people img {
+    margin: 10% 0;
+    width: 30%;
+}
   .main__features {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 5% 5%;
+  }
+  .main__features h3 {    
+      text-align: left;  
+  }
+  .main__features h3 {
+    text-align: left;
   }
   .how-text {
     flex-direction: row;
   }
   main h1 {
-    margin: auto;
-    font-size: 3em;
-    width: 44%;
+    margin: auto 3%;
+    font-size: 5em;
+     width: 50%; 
     text-align: left;
-    padding-top: 9%;
+    padding-top: 6%;
   }
-  
+
+  hr {
+    width: 26%;
+    margin-left: 10%;
+}
   .main__how {
     background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
     background-position: top right;
