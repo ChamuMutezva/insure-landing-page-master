@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-size: 16px;
 }
+<<<<<<< HEAD
 
 html,
 body {
@@ -329,3 +330,145 @@ h6 {
     visibility: visible;
   }
 }
+||||||| merged common ancestors
+=======
+
+body {
+  font-family: "Karla", sans-serif; 
+  overflow-x: hidden;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5 , h6 {
+  font-family: "DM Serif Display", sans-serif;
+}
+
+/* Main section */
+hr {
+  width: 50%;
+  margin: auto;
+}
+
+.how-text h1 {
+  font-weight: 100;
+  line-height: 1;
+  margin-bottom: 8%;
+}
+
+.main__intro {
+  padding-top: 20%;
+}
+
+h1 {
+  text-align: center; 
+  font-weight: 700;
+  font-size: 2.8em;
+  padding-top: 10%;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.main__features {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10% auto 35%;
+  /* justify-items: center; */
+}
+
+.process, .prices, .people {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 9%;
+  padding: 5%;
+  text-align: center;
+}
+
+.process img, .prices img, .people img {
+  margin: 10% auto;
+}
+
+.main__how {
+  background-color: hsl(270, 9%, 17%);
+  background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  height: 60vh;
+  color: white;
+}
+
+.how-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button.button {
+  display: block;
+  background-color: hsl(270, 9%, 17%);
+  color: white;
+  margin: auto;
+  width: 60%;
+  padding: 0.6em;
+  border: 2px solid white;
+}
+
+@media screen and (min-width: 600px) {
+  .main__features {
+    margin: 15% 15%;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  button.button {
+    width: 23%;
+    margin-top: 9%;
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  .process img, .prices img, .people img {
+    margin: 10% 0;
+    width: 30%;
+}
+  .main__features {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5% 5%;
+  }
+  .main__features h3 {    
+      text-align: left;  
+  }
+  .main__features h3 {
+    text-align: left;
+  }
+  .how-text {
+    flex-direction: row;
+  }
+  main h1 {
+    margin: auto 3%;
+    font-size: 5em;
+     width: 50%; 
+    text-align: left;
+    padding-top: 6%;
+  }
+
+  hr {
+    width: 26%;
+    margin-left: 10%;
+}
+  .main__how {
+    background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 55vh;
+    background-size: contain;
+  }
+}
+>>>>>>> a21534cd320cdafe912b7c1b90c0bed788b94e7f
