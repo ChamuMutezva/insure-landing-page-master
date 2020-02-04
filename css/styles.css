@@ -4,6 +4,334 @@
   box-sizing: border-box;
   font-size: 16px;
 }
+<<<<<<< HEAD
+
+html,
+body {
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  color: #d7d4d4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'DM Serif Display', serif;
+}
+
+.primary-btn {
+  background: transparent;
+  color: #d7d4d4;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 15px 0;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  border: 2px solid #d7d4d4;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  color: #2c2640;
+  background: #fffcff;
+  border: 2px solid #fffcff;
+}
+
+.hide {
+  display: none;
+  -webkit-transition: display 0.2s linear, opacity 0.2s linear;
+  -moz-transition: display 0.2s linear, opacity 0.2s linear;
+  -o-transition: display 0.2s linear, opacity 0.2s linear;
+}
+
+/* Header section */
+.header-container {
+  position: relative;
+  min-height: 1020px;
+  background-color: #fff;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 15px;
+  align-items: center;
+}
+.hamburger-icon,
+.close-icon {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.header-img {
+  display: block; /* to remove extra space under img, by default img is rendered inline*/
+  width: 100%;
+}
+
+.intro-text {
+  padding: 95px 20px;
+  text-align: center;
+  background-color: #2d2640;
+  background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.intro-text h1 {
+  font-size: 45px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+}
+
+.intro-text p {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.horizontal-line {
+  display: none;
+}
+
+.right-pattern {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position: absolute;
+  top: 88px;
+  right: 0;
+}
+
+.left-pattern {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: absolute;
+  visibility: hidden;
+}
+
+.nav-container {
+  position: relative;
+  height: 100%;
+}
+
+#desktop-nav {
+  display: none;
+}
+
+#desktop-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#desktop-nav .desktop-nav-item {
+  cursor: pointer;
+  padding-right: 45px;
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(273, 4%, 51%);
+  text-transform: uppercase;
+}
+
+#desktop-nav .desktop-nav-item:hover {
+  color: #2b282f;
+}
+
+#desktop-nav .desktop-nav-item:last-child {
+  padding-right: 0;
+}
+
+#desktop-nav .nav-btn {
+  color: hsl(270, 9%, 17%);
+  border: 2px solid hsl(270, 9%, 17%);
+}
+#desktop-nav .nav-btn:hover {
+  color: #fffcff;
+  background-color: #2b282f;
+}
+
+#mobile-nav {
+  position: absolute;
+  top: 92px;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  opacity: 1;
+  background: #2b272f url(../images/bg-pattern-mobile-nav.svg) no-repeat right bottom;
+  text-align: center;
+  z-index: 2000; /* to be at the top*/
+}
+
+#mobile-nav ul {
+  list-style: none;
+}
+
+.mobile-nav-item {
+  margin: 40px 0;
+  font-size: 1.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mobile-nav-item:hover {
+  color: #fffcff;
+}
+
+.mobile-nav-item .nav-btn {
+  width: 100%;
+  font-size: 15px;
+  padding: 15px;
+  margin: 0;
+}
+
+/* media queries */
+@media screen and (min-width: 600px) {
+  #desktop-nav {
+    display: block;
+  }
+
+  #desktop-nav .desktop-nav-item {
+    padding-right: 25px;
+  }
+
+  #desktop-nav .nav-btn {
+    padding: 10px;
+  }
+
+  .hamburger-icon,
+  .close-icon {
+    display: none;
+  }
+
+  .intro-text {
+    padding: 95px 130px;
+  }
+
+  .intro-text p {
+    margin: 27px 0;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .header__logo {
+    padding: 30px 165px;
+  }
+
+  #desktop-nav .desktop-nav-item {
+    padding-right: 45px;
+  }
+
+  #desktop-nav .nav-btn {
+    padding: 10px 25px;
+  }
+
+  .header-container {
+    min-height: 660px;
+  }
+
+  .header__main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px 165px;
+    background-color: #2d2640;
+  }
+
+  .header-img {
+    position: absolute;
+    right: -33px;
+    top: 115px;
+  }
+
+  .intro-text {
+    width: 62%;
+    padding: 50px 0;
+    text-align: left;
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .image-intro {
+    position: relative;
+    width: 47%;
+  }
+
+  .intro-text h1 {
+    font-size: 57px;
+  }
+
+  .horizontal-line {
+    display: block;
+    width: 30%;
+    margin-bottom: 60px;
+  }
+
+  .right-pattern {
+    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .left-pattern {
+    background-image: url(../images/bg-pattern-intro-left-desktop.svg);
+    background-position: left bottom;
+    bottom: -150px;
+    left: 0;
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .header-container {
+    min-height: 800px;
+  }
+
+  .header-img {
+    position: absolute;
+    right: 10px;
+    top: 95px;
+  }
+
+  .intro-text {
+    width: 48%;
+    padding: 95px 0;
+  }
+
+  .right-pattern {
+    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .left-pattern {
+    background-image: url(../images/bg-pattern-intro-left-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    visibility: visible;
+  }
+}
+||||||| merged common ancestors
+=======
 
 body {
   font-family: "Karla", sans-serif; 
@@ -147,8 +475,13 @@ cursor: pointer;
     height: 55vh;
     background-size: contain;
   }
+<<<<<<< HEAD
   .process, .prices, .people {
     
     text-align: left;
 }
 }
+=======
+}
+>>>>>>> a21534cd320cdafe912b7c1b90c0bed788b94e7f
+>>>>>>> 4f59e04d1b3387c10de60d8592eef89103feabad
