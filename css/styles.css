@@ -33,6 +33,13 @@ h6 {
   padding: 10px 25px;
   text-transform: uppercase;
   border: 2px solid #d7d4d4;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  color: #2c2640;
+  background: #fffcff;
+  border: 2px solid #fffcff;
 }
 
 .hide {
@@ -65,6 +72,7 @@ h6 {
   display: block; /* to remove extra space under img, by default img is rendered inline*/
   width: 100%;
 }
+
 .intro-text {
   padding: 95px 20px;
   text-align: center;
@@ -73,12 +81,14 @@ h6 {
   background-repeat: no-repeat;
   background-position: left top;
 }
+
 .intro-text h1 {
   font-size: 45px;
   font-weight: 400;
   color: #fff;
   line-height: 1;
 }
+
 .intro-text p {
   margin: 20px 0;
   line-height: 1.5;
@@ -125,11 +135,16 @@ h6 {
 }
 
 #desktop-nav .desktop-nav-item {
+  cursor: pointer;
   padding-right: 45px;
   font-size: 14px;
   font-weight: 700;
   color: hsl(273, 4%, 51%);
   text-transform: uppercase;
+}
+
+#desktop-nav .desktop-nav-item:hover {
+  color: #2b282f;
 }
 
 #desktop-nav .desktop-nav-item:last-child {
@@ -139,6 +154,10 @@ h6 {
 #desktop-nav .nav-btn {
   color: hsl(270, 9%, 17%);
   border: 2px solid hsl(270, 9%, 17%);
+}
+#desktop-nav .nav-btn:hover {
+  color: #fffcff;
+  background-color: #2b282f;
 }
 
 #mobile-nav {
@@ -162,6 +181,10 @@ h6 {
   font-size: 1.25em;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.mobile-nav-item:hover {
+  color: #fffcff;
 }
 
 .mobile-nav-item .nav-btn {
