@@ -90,6 +90,11 @@ button.button {
   padding: 0.6em;
   border: 2px solid white;
 }
+button.button:hover {
+background-color: white;
+color:hsl(270, 9%, 17%);
+cursor: pointer;
+}
 
 @media screen and (min-width: 600px) {
   .main__features {
@@ -142,4 +147,8 @@ button.button {
     height: 55vh;
     background-size: contain;
   }
+  .process, .prices, .people {
+    
+    text-align: left;
+}
 }
