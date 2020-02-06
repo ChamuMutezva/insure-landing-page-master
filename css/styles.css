@@ -364,6 +364,7 @@ button.button:hover {
   .horizontal-line {
     display: block;
     width: 30%;
+    margin-left: 0;
     margin-bottom: 60px;
   }
   .right-pattern {
