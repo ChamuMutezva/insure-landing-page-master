@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
   overflow-x: hidden;
 }
 
@@ -14,8 +14,13 @@ p {
   line-height: 1.6em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "DM Serif Display", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'DM Serif Display', sans-serif;
 }
 
 .primary-btn {
@@ -59,7 +64,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.hamburger-icon, .close-icon {
+.hamburger-icon,
+.close-icon {
   opacity: 1;
   cursor: pointer;
 }
@@ -90,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 .intro-text p {
   margin: 20px 0;
   line-height: 1.5;
+  font-size: 1em;
 }
 
 .horizontal-line {
@@ -230,7 +237,9 @@ h3 {
   /* justify-items: center; */
 }
 
-.process, .prices, .people {
+.process,
+.prices,
+.people {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -239,7 +248,9 @@ h3 {
   text-align: center;
 }
 
-.process img, .prices img, .people img {
+.process img,
+.prices img,
+.people img {
   margin: 10% auto;
 }
 
@@ -286,7 +297,8 @@ button.button:hover {
   #desktop-nav .nav-btn {
     padding: 10px;
   }
-  .hamburger-icon, .close-icon {
+  .hamburger-icon,
+  .close-icon {
     display: none;
   }
   .intro-text {
@@ -314,6 +326,7 @@ button.button:hover {
     min-height: 660px;
   }
   .header__main {
+    min-height: 600px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -327,6 +340,7 @@ button.button:hover {
   }
   .intro-text {
     width: 62%;
+    position: relative;
     padding: 50px 0;
     text-align: left;
     background-image: none;
@@ -334,10 +348,11 @@ button.button:hover {
   }
   .image-intro {
     position: relative;
-    width: 47%;
+    width: 43%;
   }
   .intro-text h1 {
-    font-size: 57px;
+    text-align: left;
+    font-size: 72px;
   }
   .horizontal-line {
     display: block;
@@ -367,7 +382,9 @@ button.button:hover {
   p {
     font-size: 1.5em;
   }
-  .process img, .prices img, .people img {
+  .process img,
+  .prices img,
+  .people img {
     margin: 10% 0;
     width: 30%;
   }
@@ -402,14 +419,16 @@ button.button:hover {
     height: 55vh;
     background-size: contain;
   }
-  .process, .prices, .people {
+  .process,
+  .prices,
+  .people {
     text-align: left;
   }
 }
 
 @media only screen and (min-width: 1150px) {
   .header-container {
-    min-height: 800px;
+    min-height: 750px;
   }
   .header-img {
     position: absolute;
@@ -417,7 +436,7 @@ button.button:hover {
     top: 95px;
   }
   .intro-text {
-    width: 48%;
+    width: 53%;
     padding: 95px 0;
   }
   .right-pattern {
@@ -439,5 +458,5 @@ button.button:hover {
   }
   .main__intro {
     padding-top: 5%;
-}
+  }
 }
