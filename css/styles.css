@@ -215,6 +215,8 @@ hr {
   font-weight: 100;
   line-height: 1;
   margin-bottom: 8%;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 .main__intro {
@@ -264,6 +266,11 @@ h3 {
   background-repeat: no-repeat;
   height: 60vh;
   color: white;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    margin: auto;
 }
 
 .how-text {
@@ -413,12 +420,12 @@ button.button:hover {
     flex-direction: row;
     justify-content: space-between;
   }
-  main h2 {
+  .how-text h2 {
     margin: auto 3%;
     font-size: 4em;
     width: 60%;
     text-align: left;
-    padding-top: 10%;
+   
   }
   .how-text .primary-btn{
     margin-right: 5%;
