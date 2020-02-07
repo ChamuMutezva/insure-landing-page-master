@@ -190,6 +190,7 @@ h6 {
   font-size: 1.25em;
   font-weight: 700;
   text-transform: uppercase;
+  color: #d7d4d4;
 }
 
 .mobile-nav-item:hover {
@@ -299,6 +300,7 @@ button.button:hover {
   #desktop-nav .nav-btn {
     padding: 10px;
   }
+  #mobile-nav,
   .hamburger-icon,
   .close-icon {
     display: none;
