@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
   overflow-x: hidden;
 }
 
@@ -14,8 +14,13 @@ p {
   line-height: 1.6em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "DM Serif Display", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'DM Serif Display', sans-serif;
 }
 
 .primary-btn {
@@ -59,7 +64,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.hamburger-icon, .close-icon {
+.hamburger-icon,
+.close-icon {
   opacity: 1;
   cursor: pointer;
 }
@@ -90,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 .intro-text p {
   margin: 20px 0;
   line-height: 1.5;
+  font-size: 1em;
 }
 
 .horizontal-line {
@@ -102,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(../images/bg-pattern-intro-right-mobile.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
+  width: 35%;
   position: absolute;
   top: 88px;
   right: 0;
@@ -113,6 +121,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(../images/bg-pattern-intro-left-mobile.svg);
   background-repeat: no-repeat;
   background-position: left top;
+  width: 24%;
   position: absolute;
   visibility: hidden;
 }
@@ -181,6 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.25em;
   font-weight: 700;
   text-transform: uppercase;
+  color: #d7d4d4;
 }
 
 .mobile-nav-item:hover {
@@ -201,10 +211,12 @@ hr {
   margin: auto;
 }
 
-.how-text h1 {
+.how-text h2 {
   font-weight: 100;
   line-height: 1;
   margin-bottom: 8%;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 .main__intro {
@@ -230,7 +242,9 @@ h3 {
   /* justify-items: center; */
 }
 
-.process, .prices, .people {
+.process,
+.prices,
+.people {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -239,7 +253,9 @@ h3 {
   text-align: center;
 }
 
-.process img, .prices img, .people img {
+.process img,
+.prices img,
+.people img {
   margin: 10% auto;
 }
 
@@ -250,6 +266,11 @@ h3 {
   background-repeat: no-repeat;
   height: 60vh;
   color: white;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    margin: auto;
 }
 
 .how-text {
@@ -286,7 +307,9 @@ button.button:hover {
   #desktop-nav .nav-btn {
     padding: 10px;
   }
-  .hamburger-icon, .close-icon {
+  #mobile-nav,
+  .hamburger-icon,
+  .close-icon {
     display: none;
   }
   .intro-text {
@@ -314,6 +337,7 @@ button.button:hover {
     min-height: 660px;
   }
   .header__main {
+    min-height: 600px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -327,6 +351,7 @@ button.button:hover {
   }
   .intro-text {
     width: 62%;
+    position: relative;
     padding: 50px 0;
     text-align: left;
     background-image: none;
@@ -334,20 +359,28 @@ button.button:hover {
   }
   .image-intro {
     position: relative;
-    width: 47%;
+    width: 43%;
   }
   .intro-text h1 {
-    font-size: 57px;
+    text-align: left;
+    font-size: 72px;
+  }
+  .intro-text button {
+    /* to position button over pattern */
+    position: absolute;
+    z-index: 500000;
   }
   .horizontal-line {
     display: block;
     width: 30%;
+    margin-left: 0;
     margin-bottom: 60px;
   }
   .right-pattern {
     background-image: url(../images/bg-pattern-intro-right-desktop.svg);
     background-repeat: no-repeat;
     background-position: right top;
+    width: 46%;
     position: absolute;
     top: 0;
     right: 0;
@@ -367,7 +400,9 @@ button.button:hover {
   p {
     font-size: 1.5em;
   }
-  .process img, .prices img, .people img {
+  .process img,
+  .prices img,
+  .people img {
     margin: 10% 0;
     width: 30%;
   }
@@ -383,13 +418,17 @@ button.button:hover {
   }
   .how-text {
     flex-direction: row;
+    justify-content: space-between;
   }
-  main h1 {
+  .how-text h2 {
     margin: auto 3%;
-    font-size: 5em;
-    width: 50%;
+    font-size: 4em;
+    width: 60%;
     text-align: left;
-    padding-top: 6%;
+   
+  }
+  .how-text .primary-btn{
+    margin-right: 5%;
   }
   hr {
     width: 26%;
@@ -399,17 +438,26 @@ button.button:hover {
     background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
     background-position: top right;
     background-repeat: no-repeat;
-    height: 55vh;
+    height: 40vh;
     background-size: contain;
+    width: 88%;
+    margin: auto;
   }
-  .process, .prices, .people {
+  .process,
+  .prices,
+  .people {
     text-align: left;
   }
 }
 
 @media only screen and (min-width: 1150px) {
+  .main__intro h1 {
+    text-align: left;
+    margin-left: 6%;
+    font-size: 5em;
+}
   .header-container {
-    min-height: 800px;
+    min-height: 750px;
   }
   .header-img {
     position: absolute;
@@ -417,8 +465,11 @@ button.button:hover {
     top: 95px;
   }
   .intro-text {
-    width: 48%;
+    width: 53%;
     padding: 95px 0;
+  }
+  .intro-text h1 {
+    font-size: 72px;
   }
   .right-pattern {
     background-image: url(../images/bg-pattern-intro-right-desktop.svg);
@@ -433,11 +484,11 @@ button.button:hover {
     background-repeat: no-repeat;
     background-position: left bottom;
     position: absolute;
-    bottom: -60px;
+    bottom: -176px;
     left: 0;
     visibility: visible;
   }
   .main__intro {
     padding-top: 5%;
-}
+  }
 }
