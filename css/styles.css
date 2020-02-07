@@ -211,10 +211,12 @@ hr {
   margin: auto;
 }
 
-.how-text h1 {
+.how-text h2 {
   font-weight: 100;
   line-height: 1;
   margin-bottom: 8%;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 .main__intro {
@@ -264,6 +266,11 @@ h3 {
   background-repeat: no-repeat;
   height: 60vh;
   color: white;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    margin: auto;
 }
 
 .how-text {
@@ -411,13 +418,17 @@ button.button:hover {
   }
   .how-text {
     flex-direction: row;
+    justify-content: space-between;
   }
-  main h1 {
+  .how-text h2 {
     margin: auto 3%;
-    font-size: 5em;
-    width: 50%;
+    font-size: 4em;
+    width: 60%;
     text-align: left;
-    padding-top: 6%;
+   
+  }
+  .how-text .primary-btn{
+    margin-right: 5%;
   }
   hr {
     width: 26%;
@@ -427,8 +438,10 @@ button.button:hover {
     background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
     background-position: top right;
     background-repeat: no-repeat;
-    height: 55vh;
+    height: 40vh;
     background-size: contain;
+    width: 88%;
+    margin: auto;
   }
   .process,
   .prices,
@@ -438,6 +451,11 @@ button.button:hover {
 }
 
 @media only screen and (min-width: 1150px) {
+  .main__intro h1 {
+    text-align: left;
+    margin-left: 6%;
+    font-size: 5em;
+}
   .header-container {
     min-height: 750px;
   }
