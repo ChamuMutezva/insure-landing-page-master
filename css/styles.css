@@ -238,8 +238,8 @@ h3 {
 .main__features {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 10% auto 35%;
-  /* justify-items: center; */
+  margin: 10% auto 40%;
+  row-gap: 5%;
 }
 
 .process,
@@ -248,7 +248,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-  gap: 9%;
+  gap: 4%;
   padding: 5%;
   text-align: center;
 }
