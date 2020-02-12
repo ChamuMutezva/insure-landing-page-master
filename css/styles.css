@@ -57,7 +57,8 @@ h6 {
   background-color: #fff;
 }
 
-.header__logo {
+.site-header {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   padding: 30px 15px;
@@ -131,73 +132,47 @@ h6 {
   height: 100%;
 }
 
-#desktop-nav {
-  display: none;
+.logo-container {
+  width: 20%;
 }
 
-#desktop-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-#desktop-nav .desktop-nav-item {
-  cursor: pointer;
-  padding-right: 45px;
-  font-size: 14px;
-  font-weight: 700;
-  color: hsl(273, 4%, 51%);
-  text-transform: uppercase;
-}
-
-#desktop-nav .desktop-nav-item:hover {
-  color: #2b282f;
-}
-
-#desktop-nav .desktop-nav-item:last-child {
-  padding-right: 0;
-}
-
-#desktop-nav .nav-btn {
-  color: hsl(270, 9%, 17%);
-  border: 2px solid hsl(270, 9%, 17%);
-}
-
-#desktop-nav .nav-btn:hover {
-  color: #fffcff;
-  background-color: #2b282f;
-}
-
-#mobile-nav {
+#main-nav {
   position: absolute;
-  top: 92px;
-  height: 100%;
+  top: 70px;
+  right: 0;
   width: 100%;
-  padding: 20px;
+  height: 100%;
+  padding: 25px;
   opacity: 1;
   background: #2b272f url(../images/bg-pattern-mobile-nav.svg) no-repeat right bottom;
   text-align: center;
-  z-index: 2000;
-  /* to be at the top*/
+  z-index: 20000;
 }
 
-#mobile-nav ul {
+#main-nav ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.mobile-nav-item {
-  margin: 40px 0;
+.main-nav-item {
+  margin: 23px 0;
   font-size: 1.25em;
   font-weight: 700;
   text-transform: uppercase;
   color: #d7d4d4;
 }
 
-.mobile-nav-item:hover {
+.main-nav-item:last-child {
+  align-self: stretch;
+}
+
+.main-nav-item:hover {
   color: #fffcff;
 }
 
-.mobile-nav-item .nav-btn {
+.main-nav-item .nav-btn {
   width: 100%;
   font-size: 15px;
   padding: 15px;
@@ -267,10 +242,10 @@ h3 {
   height: 60vh;
   color: white;
   display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 88%;
-    margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 88%;
+  margin: auto;
 }
 
 .how-text {
@@ -298,14 +273,23 @@ button.button:hover {
 /* media queries */
 
 @media screen and (min-width: 600px) {
-  #desktop-nav {
+  .site-header {
+    flex-direction: row;
+    padding: 30px 15px;
+  }
+  #main-nav {
     display: block;
+    position: relative;
+    top: 0;
+    width: 71%;
+    height: 70px;
+    padding: 0;
+    background: transparent;
   }
-  #desktop-nav .desktop-nav-item {
-    padding-right: 25px;
-  }
-  #desktop-nav .nav-btn {
-    padding: 10px;
+  #main-nav ul {
+    flex-direction: row;
+    height: inherit;
+    justify-content: flex-end;
   }
   #mobile-nav,
   .hamburger-icon,
@@ -321,21 +305,62 @@ button.button:hover {
   .main__features {
     margin: 15% 15%;
   }
+
+  #main-nav .main-nav-item {
+    cursor: pointer;
+    padding-right: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(273, 4%, 51%);
+    text-transform: uppercase;
+  }
+
+  .main-nav-item:last-child {
+    align-self: auto;
+  }
+
+  #main-nav .main-nav-item:hover {
+    color: #2b282f;
+  }
+
+  #main-nav .main-nav-item:last-child {
+    padding-right: 0;
+  }
+
+  #main-nav .nav-btn {
+    padding: 10px;
+    font-size: 12px;
+    color: hsl(270, 9%, 17%);
+    border: 2px solid hsl(270, 9%, 17%);
+  }
+
+  #main-nav .nav-btn:hover {
+    color: #fffcff;
+    background-color: #2b282f;
+  }
 }
 
 @media only screen and (min-width: 980px) {
-  .header__logo {
+  .site-header {
     padding: 30px 165px;
   }
-  #desktop-nav .desktop-nav-item {
+
+  #main-nav {
+    width: 80%;
+  }
+
+  #main-nav .main-nav-item {
     padding-right: 45px;
   }
-  #desktop-nav .nav-btn {
+
+  #main-nav .nav-btn {
     padding: 10px 25px;
   }
+
   .header-container {
     min-height: 660px;
   }
+
   .header__main {
     min-height: 600px;
     display: flex;
@@ -344,11 +369,13 @@ button.button:hover {
     padding: 10px 165px;
     background-color: #2d2640;
   }
+
   .header-img {
     position: absolute;
     right: -33px;
     top: 115px;
   }
+
   .intro-text {
     width: 62%;
     position: relative;
@@ -357,25 +384,30 @@ button.button:hover {
     background-image: none;
     background-color: transparent;
   }
+
   .image-intro {
     position: relative;
     width: 43%;
   }
+
   .intro-text h1 {
     text-align: left;
     font-size: 72px;
   }
+
   .intro-text button {
     /* to position button over pattern */
     position: absolute;
     z-index: 500000;
   }
+
   .horizontal-line {
     display: block;
     width: 30%;
     margin-left: 0;
     margin-bottom: 60px;
   }
+
   .right-pattern {
     background-image: url(../images/bg-pattern-intro-right-desktop.svg);
     background-repeat: no-repeat;
@@ -385,6 +417,7 @@ button.button:hover {
     top: 0;
     right: 0;
   }
+
   .left-pattern {
     background-image: url(../images/bg-pattern-intro-left-desktop.svg);
     background-position: left bottom;
@@ -392,48 +425,58 @@ button.button:hover {
     left: 0;
     visibility: visible;
   }
+
   button.button {
     width: 23%;
     margin-top: 9%;
     font-size: 2em;
   }
+
   p {
     font-size: 1.5em;
   }
+
   .process img,
   .prices img,
   .people img {
     margin: 10% 0;
     width: 30%;
   }
+
   .main__features {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 5% 5%;
   }
+
   .main__features h3 {
     text-align: left;
   }
+
   .main__features h3 {
     text-align: left;
   }
+
   .how-text {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .how-text h2 {
     margin: auto 3%;
     font-size: 4em;
     width: 60%;
     text-align: left;
-   
   }
-  .how-text .primary-btn{
+
+  .how-text .primary-btn {
     margin-right: 5%;
   }
+
   hr {
     width: 26%;
     margin-left: 10%;
   }
+
   .main__how {
     background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
     background-position: top right;
@@ -443,6 +486,7 @@ button.button:hover {
     width: 88%;
     margin: auto;
   }
+
   .process,
   .prices,
   .people {
@@ -455,7 +499,7 @@ button.button:hover {
     text-align: left;
     margin-left: 6%;
     font-size: 5em;
-}
+  }
   .header-container {
     min-height: 750px;
   }

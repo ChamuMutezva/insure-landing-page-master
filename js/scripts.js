@@ -1,4 +1,4 @@
-const mobileNav = document.getElementById('mobile-nav');
+const mobileNav = document.getElementById('main-nav');
 const hamburgerIcon = document.getElementsByClassName('hamburger-icon')[0];
 const closeIcon = document.getElementsByClassName('close-icon')[0];
 
