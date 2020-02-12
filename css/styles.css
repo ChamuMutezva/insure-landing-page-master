@@ -294,6 +294,54 @@ button.button:hover {
   color: hsl(270, 9%, 17%);
   cursor: pointer;
 }
+/* footer section */
+footer.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_social-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: left top;
+  margin-top: 20%;
+  height: 31vh;
+  width: 100%;
+  /* gap: 10%; */
+}
+.social {
+  margin: auto;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  width: 100%;
+  height: 40vh;
+}
+footer img {
+  display: block;
+  margin: auto;
+}
+
 
 /* media queries */
 
