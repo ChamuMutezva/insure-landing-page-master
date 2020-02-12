@@ -57,7 +57,8 @@ h6 {
   background-color: #fff;
 }
 
-.header__logo {
+.site-header {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   padding: 30px 15px;
@@ -267,10 +268,10 @@ h3 {
   height: 60vh;
   color: white;
   display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 88%;
-    margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 88%;
+  margin: auto;
 }
 
 .how-text {
@@ -324,7 +325,7 @@ button.button:hover {
 }
 
 @media only screen and (min-width: 980px) {
-  .header__logo {
+  .site-header {
     padding: 30px 165px;
   }
   #desktop-nav .desktop-nav-item {
@@ -425,9 +426,8 @@ button.button:hover {
     font-size: 4em;
     width: 60%;
     text-align: left;
-   
   }
-  .how-text .primary-btn{
+  .how-text .primary-btn {
     margin-right: 5%;
   }
   hr {
@@ -455,7 +455,7 @@ button.button:hover {
     text-align: left;
     margin-left: 6%;
     font-size: 5em;
-}
+  }
   .header-container {
     min-height: 750px;
   }
