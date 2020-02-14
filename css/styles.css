@@ -342,7 +342,7 @@ button.button:hover {
 
 @media only screen and (min-width: 980px) {
   .site-header {
-    padding: 30px 165px;
+    padding: 30px 100px;
   }
 
   #main-nav {
@@ -365,21 +365,21 @@ button.button:hover {
     min-height: 600px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    padding: 10px 165px;
+    justify-content: space-around;
+    padding: 0 100px;
     background-color: #2d2640;
   }
 
   .header-img {
     position: absolute;
-    right: -33px;
+    /* right: -33px; */
     top: 115px;
   }
 
   .intro-text {
-    width: 62%;
+    width: 45%;
     position: relative;
-    padding: 50px 0;
+    padding: 115px 0;
     text-align: left;
     background-image: none;
     background-color: transparent;
@@ -387,12 +387,12 @@ button.button:hover {
 
   .image-intro {
     position: relative;
-    width: 43%;
+    width: 45%;
   }
 
   .intro-text h1 {
     text-align: left;
-    font-size: 72px;
+    font-size: 63px;
   }
 
   .intro-text button {
@@ -494,7 +494,10 @@ button.button:hover {
   }
 }
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1281px) {
+  .site-header {
+    padding: 30px 165px;
+  }
   .main__intro h1 {
     text-align: left;
     margin-left: 6%;
@@ -503,14 +506,20 @@ button.button:hover {
   .header-container {
     min-height: 750px;
   }
+  .header__main {
+    padding: 0 165px;
+  }
+  .image-intro {
+    width: 49%;
+  }
   .header-img {
     position: absolute;
-    right: 10px;
-    top: 95px;
+    /* right: 10px; */
+    top: 106px;
   }
   .intro-text {
-    width: 53%;
-    padding: 95px 0;
+    width: 49%;
+    padding: 102px 0;
   }
   .intro-text h1 {
     font-size: 72px;
