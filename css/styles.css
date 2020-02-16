@@ -183,7 +183,7 @@ hr {
 .how-text h2 {
   font-weight: 100;
   line-height: 1;
-  margin-bottom: 8%;
+  margin: 0 10% 8%;
   font-size: 2.5em;
   text-align: center;
 }
@@ -200,9 +200,10 @@ h1 {
 }
 
 h3 {
-  font-size: 1.2em;
-  font-weight: 700;
+  font-size: 1.1em;
+  font-weight: 100;
   margin-bottom: 3%;
+  opacity: 0.6;
 }
 
 .main__features {
@@ -263,22 +264,31 @@ button.button:hover {
 
 /* footer section */
 
-footer.footer {
+.footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: hsl(0, 0%, 98%);
+  margin-top: 36%;
+}
+
+.social button {
+  margin-right: 5%;
+  transform: scale(1.5);
+  width: 20px;
 }
 
 .logo_social-container {
   display: flex;
   flex-direction: column;
- /* background-image: url(../images/bg-pattern-footer-mobile.svg);
+  /* background-color: hsl(0, 0%, 98%);*/
+  background-image: url(../images/bg-pattern-footer-mobile.svg);
   background-repeat: no-repeat;
-   background-size: contain; 
-  background-position: left top;*/
-  margin-top: 20%;
+  background-size: contain;
+  background-position: left top;
   height: 31vh;
   width: 100%;
+  margin-bottom: 6%;
   /* gap: 10%; */
 }
 
@@ -286,13 +296,20 @@ footer.footer {
   margin: auto 0 16%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .footer__links {
   display: flex;
   flex-direction: column;
-  margin-top: 20%;
+  margin-top: 3%;
+  width: 100%;
+  /*background-color: hsl(0, 0%, 98%);*/
+}
+
+.footer__logo-insure {
+  margin-top: 22%;
+  margin-bottom: 10%;
 }
 
 .footer__link {
@@ -310,10 +327,10 @@ footer.footer {
 .footer__logo {
   width: 100%;
   height: 40vh;
-  background-image: url(../images/bg-pattern-footer-mobile.svg);
+  /* background-image: url(../images/bg-pattern-footer-mobile.svg);
   background-repeat: no-repeat;
    background-size: contain; 
-  background-position: center;
+  background-position: center;*/
 }
 
 footer img {
@@ -323,10 +340,15 @@ footer img {
 
 .links a {
   display: block;
-  margin-top: 13%;
+  margin: 0 auto 13%;
   text-decoration: none;
   list-style: none;
   color: black;
+  font-weight: 600;
+}
+
+footer .links a:first-child {
+  margin-top: 26%;
 }
 
 /* media queries */
@@ -388,6 +410,16 @@ footer img {
   #main-nav .nav-btn:hover {
     color: #fffcff;
     background-color: #2b282f;
+  }
+  .footer__container {
+    margin-top: 9%;
+  }
+  .logo_social-container {
+   background-image: url(../images/bg-pattern-footer-desktop.svg);
+    margin-bottom: 0%;
+  }
+  .footer__links {
+    margin-top: 6%;
   }
 }
 
@@ -499,7 +531,7 @@ footer img {
     margin-right: 5%;
   }
   hr {
-    width: 80%;   
+    width: 80%;
   }
   .main__how {
     background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
@@ -515,30 +547,43 @@ footer img {
   }
   /* footer */
   .logo_social-container {
-   /* background-image: url(../images/bg-pattern-footer-desktop.svg); */
+    /* background-image: url(../images/bg-pattern-footer-desktop.svg); */
     flex-direction: row;
   }
-  .footer__logo {   
-    background-image: url(../images/bg-pattern-footer-desktop.svg);
-    background-repeat: no-repeat;    
+
+  .footer__logo {
+   /* background-image: url(../images/bg-pattern-footer-desktop.svg);*/
+    background-repeat: no-repeat;
     background-position: left bottom;
     background-size: inherit;
-}
+  }
   .footer__logo-insure {
     width: 50vw;
-}
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
   .social {
     width: 50vw;
-    /* display: flex; */
+    margin: auto;
     justify-content: flex-end;
     /* gap: 10%; */
   }
-  .social button{
+  .social button {
     margin-left: 5%;
   }
-  .social:last-child{
+  .social:last-child {
     margin-right: 10%;
+  } 
+  .footer__links {
+    margin-top: 0%;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;    
   }
+  .footer__link {
+    margin-bottom: 5%
+  }
+  
 }
 
 @media only screen and (min-width: 1281px) {
