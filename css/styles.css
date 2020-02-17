@@ -14,12 +14,7 @@ p {
   line-height: 1.6em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'DM Serif Display', sans-serif;
 }
 
@@ -65,8 +60,7 @@ h6 {
   align-items: center;
 }
 
-.hamburger-icon,
-.close-icon {
+.hamburger-icon, .close-icon {
   opacity: 1;
   cursor: pointer;
 }
@@ -219,9 +213,7 @@ h3 {
   row-gap: 5%;
 }
 
-.process,
-.prices,
-.people {
+.process, .prices, .people {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -230,9 +222,7 @@ h3 {
   text-align: center;
 }
 
-.process img,
-.prices img,
-.people img {
+.process img, .prices img, .people img {
   margin: 7% auto;
 }
 
@@ -364,6 +354,13 @@ footer .links a:first-child {
 
 /* media queries */
 
+@media screen and (min-width: 450px) {
+  .footer__logo-insure {
+    margin-top: 4%;
+    margin-bottom: 5%;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .site-header {
     flex-direction: row;
@@ -383,9 +380,7 @@ footer .links a:first-child {
     height: inherit;
     justify-content: flex-end;
   }
-  #mobile-nav,
-  .hamburger-icon,
-  .close-icon {
+  #mobile-nav, .hamburger-icon, .close-icon {
     display: none;
   }
   .intro-text {
@@ -516,9 +511,7 @@ footer .links a:first-child {
   p {
     font-size: 1.5em;
   }
-  .process img,
-  .prices img,
-  .people img {
+  .process img, .prices img, .people img {
     margin: 10% 0;
     width: 30%;
   }
@@ -557,9 +550,7 @@ footer .links a:first-child {
     width: 88%;
     margin: auto;
   }
-  .process,
-  .prices,
-  .people {
+  .process, .prices, .people {
     text-align: left;
   }
   /* footer */
@@ -567,7 +558,6 @@ footer .links a:first-child {
     /* background-image: url(../images/bg-pattern-footer-desktop.svg); */
     flex-direction: row;
   }
-
   .footer__logo {
     /* background-image: url(../images/bg-pattern-footer-desktop.svg);*/
     background-repeat: no-repeat;
@@ -651,5 +641,9 @@ footer .links a:first-child {
   }
   .main__intro {
     padding-top: 5%;
+  }
+  /* footer */
+  .footer__logo-insure {
+    margin-top: 8%;
   }
 }
