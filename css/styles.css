@@ -364,7 +364,7 @@ footer .links a:first-child {
 @media screen and (min-width: 600px) {
   .main__intro {
     padding-top: 10%;
-}
+  }
   .site-header {
     flex-direction: row;
     padding: 30px 15px;
@@ -431,6 +431,11 @@ footer .links a:first-child {
   }
   .footer__links {
     margin-top: 6%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer__link {
+    width: 50%;
   }
 }
 
@@ -592,6 +597,7 @@ footer .links a:first-child {
   }
   .footer__link {
     margin-bottom: 5%;
+    width: 25%;
   }
 }
 
