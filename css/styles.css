@@ -14,7 +14,12 @@ p {
   line-height: 1.6em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'DM Serif Display', sans-serif;
 }
 
@@ -46,28 +51,32 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header section */
 
+.site-navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 15px;
+  align-items: center;
+  background: #fff;
+  position: unset;
+}
+
+.hamburger-icon,
+.close-icon {
+  opacity: 1;
+  cursor: pointer;
+}
+
 .header-container {
   position: relative;
   min-height: 1020px;
   background-color: #fff;
 }
 
-.site-header {
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 15px;
-  align-items: center;
-}
-
-.hamburger-icon, .close-icon {
-  opacity: 1;
-  cursor: pointer;
-}
-
 .header-img {
-  display: block;
   /* to remove extra space under img, by default img is rendered inline*/
+  display: block;
   width: 100%;
 }
 
@@ -213,7 +222,9 @@ h3 {
   row-gap: 5%;
 }
 
-.process, .prices, .people {
+.process,
+.prices,
+.people {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -222,7 +233,9 @@ h3 {
   text-align: center;
 }
 
-.process img, .prices img, .people img {
+.process img,
+.prices img,
+.people img {
   margin: 7% auto;
 }
 
@@ -366,9 +379,11 @@ footer .links a:first-child {
   .main__intro {
     padding-top: 10%;
   }
-  .site-header {
+  .site-navbar {
     flex-direction: row;
     padding: 30px 15px;
+    position: fixed;
+    z-index: 10000;
   }
   #main-nav {
     display: block;
@@ -384,7 +399,9 @@ footer .links a:first-child {
     height: inherit;
     justify-content: flex-end;
   }
-  #mobile-nav, .hamburger-icon, .close-icon {
+  #mobile-nav,
+  .hamburger-icon,
+  .close-icon {
     display: none;
   }
   .intro-text {
@@ -441,7 +458,7 @@ footer .links a:first-child {
 }
 
 @media only screen and (min-width: 980px) {
-  .site-header {
+  .site-navbar {
     padding: 30px 100px;
   }
   #main-nav {
@@ -460,7 +477,7 @@ footer .links a:first-child {
     min-height: 600px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 100px;
     background-color: #2d2640;
   }
@@ -520,7 +537,9 @@ footer .links a:first-child {
   p {
     font-size: 1.5em;
   }
-  .process img, .prices img, .people img {
+  .process img,
+  .prices img,
+  .people img {
     margin: 10% 0;
     width: 30%;
   }
@@ -559,7 +578,9 @@ footer .links a:first-child {
     width: 88%;
     margin: auto;
   }
-  .process, .prices, .people {
+  .process,
+  .prices,
+  .people {
     text-align: left;
   }
   /* footer */
@@ -604,7 +625,7 @@ footer .links a:first-child {
 }
 
 @media only screen and (min-width: 1281px) {
-  .site-header {
+  .site-navbar {
     padding: 30px 165px;
   }
   .main__intro h1 {
@@ -656,8 +677,5 @@ footer .links a:first-child {
   /* footer */
   .footer__logo-insure {
     margin-top: 8%;
-  }
-  .footer__logo-insure img {
-    margin-left: 165px;
   }
 }
