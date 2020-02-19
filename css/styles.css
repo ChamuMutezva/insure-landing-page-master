@@ -476,7 +476,7 @@ footer .links a:first-child {
     min-height: 600px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 100px;
     background-color: #2d2640;
   }
