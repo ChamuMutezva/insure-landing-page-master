@@ -305,6 +305,7 @@ button.button:hover {
   flex-direction: column;
   margin-top: 3%;
   width: 100%;
+  text-transform: uppercase;
   /*background-color: hsl(0, 0%, 98%);*/
 }
 
@@ -341,7 +342,7 @@ footer img {
 
 .links a {
   display: block;
-  margin: 0 auto 13%;
+  margin: 0 auto 13% 0;
   text-decoration: none;
   list-style: none;
   color: black;
@@ -578,13 +579,14 @@ footer .links a:first-child {
     margin-top: 10%;
   }
   .social {
-    width: 50vw;
+    width: 24vw;
     margin: auto;
     justify-content: flex-end;
     /* gap: 10%; */
   }
   .social button {
     margin-left: 5%;
+    transform: scale(1);
   }
   .social:last-child {
     margin-right: 10%;
@@ -592,12 +594,12 @@ footer .links a:first-child {
   .footer__links {
     margin-top: 0%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 100%;
   }
   .footer__link {
     margin-bottom: 5%;
-    width: 25%;
+    width: 22%;
   }
 }
 
@@ -654,5 +656,8 @@ footer .links a:first-child {
   /* footer */
   .footer__logo-insure {
     margin-top: 8%;
+  }
+  .footer__logo-insure img {
+    margin-left: 165px;
   }
 }
