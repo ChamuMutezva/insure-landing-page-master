@@ -209,8 +209,8 @@ h1 {
 }
 
 h3 {
-  font-size: 1.1em;
-  font-weight: 100;
+  font-size: 1em;
+  font-weight: 400;
   margin-bottom: 3%;
   opacity: 0.6;
 }
@@ -287,7 +287,7 @@ button.button:hover {
 
 .social button {
   margin-right: 5%;
-  transform: scale(1.5);
+ /* transform: scale(1.5);*/
   width: 20px;
   border: 0;
 }
@@ -355,7 +355,7 @@ footer img {
 
 .links a {
   display: block;
-  margin: 0 auto 13% 0;
+  margin: 0 auto 13%;
   text-decoration: none;
   list-style: none;
   color: black;
@@ -621,6 +621,9 @@ footer .links a:first-child {
   .footer__link {
     margin-bottom: 5%;
     width: 22%;
+  }
+  .links a {    
+    margin: 0 auto 13% 0;   
   }
 }
 
