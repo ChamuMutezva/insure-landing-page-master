@@ -14,12 +14,7 @@ p {
   line-height: 1.6em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'DM Serif Display', sans-serif;
 }
 
@@ -62,8 +57,7 @@ h6 {
   position: unset;
 }
 
-.hamburger-icon,
-.close-icon {
+.hamburger-icon, .close-icon {
   opacity: 1;
   cursor: pointer;
 }
@@ -222,9 +216,7 @@ h3 {
   row-gap: 5%;
 }
 
-.process,
-.prices,
-.people {
+.process, .prices, .people {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -233,9 +225,7 @@ h3 {
   text-align: center;
 }
 
-.process img,
-.prices img,
-.people img {
+.process img, .prices img, .people img {
   margin: 7% auto;
 }
 
@@ -287,7 +277,7 @@ button.button:hover {
 
 .social button {
   margin-right: 5%;
- /* transform: scale(1.5);*/
+  /* transform: scale(1.5);*/
   width: 20px;
   border: 0;
 }
@@ -399,9 +389,7 @@ footer .links a:first-child {
     height: inherit;
     justify-content: flex-end;
   }
-  #mobile-nav,
-  .hamburger-icon,
-  .close-icon {
+  #mobile-nav, .hamburger-icon, .close-icon {
     display: none;
   }
   .intro-text {
@@ -535,13 +523,11 @@ footer .links a:first-child {
     font-size: 2em;
   }
   p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
-  .process img,
-  .prices img,
-  .people img {
+  .process img, .prices img, .people img {
     margin: 10% 0;
-    width: 30%;
+    width: 24%;
   }
   .main__features {
     grid-template-columns: 1fr 1fr 1fr;
@@ -575,12 +561,10 @@ footer .links a:first-child {
     background-repeat: no-repeat;
     height: 40vh;
     background-size: contain;
-    width: 88%;
+    width: 80%;
     margin: auto;
   }
-  .process,
-  .prices,
-  .people {
+  .process, .prices, .people {
     text-align: left;
   }
   /* footer */
@@ -622,19 +606,30 @@ footer .links a:first-child {
     margin-bottom: 5%;
     width: 22%;
   }
-  .links a {    
-    margin: 0 auto 13% 0;   
+  .links a {
+    margin: 0 auto 13% 0;
   }
 }
 
 @media only screen and (min-width: 1281px) {
+  .footer__logo-insure {
+    width: 28vw;
+  }
+  main h3 {
+    font-size: 1.7em;
+}
+  main hr {
+    margin-top: 100px;
+    width: 156px;
+    margin-left: 165px;
+}
   .site-navbar {
     padding: 30px 165px;
   }
   .main__intro h1 {
     text-align: left;
-    margin-left: 6%;
-    font-size: 5em;
+    margin-left: 165px;
+    font-size: 4.4em;
   }
   .header-container {
     min-height: 750px;
@@ -680,5 +675,8 @@ footer .links a:first-child {
   /* footer */
   .footer__logo-insure {
     margin-top: 8%;
+  }
+  .main__features {
+    margin: 22px 165px;
   }
 }
