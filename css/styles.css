@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'DM Serif Display', sans-serif;
 }
 
+
 .primary-btn {
   background: transparent;
   color: #d7d4d4;
@@ -285,11 +286,11 @@ button.button:hover {
 .logo_social-container {
   display: flex;
   flex-direction: column;
-  /* background-color: hsl(0, 0%, 98%);*/
+  /* background-color: hsl(0, 0%, 98%);
   background-image: url(../images/bg-pattern-footer-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left top;
+  background-position: left top; */
   height: 31vh;
   width: 100%;
   margin-bottom: 6%;
@@ -323,6 +324,9 @@ button.button:hover {
   align-items: center;
   margin-bottom: 10%;
 }
+.footer__links h3 {
+  font-family: 'Karla', sans-serif;
+}
 
 .links {
   display: flex;
@@ -332,10 +336,10 @@ button.button:hover {
 .footer__logo {
   width: 100%;
   height: 40vh;
-  /* background-image: url(../images/bg-pattern-footer-mobile.svg);
+  background-image: url(../images/bg-pattern-footer-mobile.svg);
   background-repeat: no-repeat;
-   background-size: contain; 
-  background-position: center;*/
+  background-size: contain;
+  background-position: top;
 }
 
 footer img {
@@ -432,7 +436,7 @@ footer .links a:first-child {
     margin-top: 9%;
   }
   .logo_social-container {
-    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    /* background-image: url(../images/bg-pattern-footer-desktop.svg);*/
     margin-bottom: 0%;
   }
   .footer__links {
@@ -573,10 +577,10 @@ footer .links a:first-child {
     flex-direction: row;
   }
   .footer__logo {
-    /* background-image: url(../images/bg-pattern-footer-desktop.svg);*/
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: inherit;
+    background-size: contain;
   }
   .footer__logo-insure {
     width: 50vw;
@@ -585,13 +589,14 @@ footer .links a:first-child {
   }
   .social {
     width: 24vw;
-    margin: auto;
+    margin: 70px auto;
     justify-content: flex-end;
     /* gap: 10%; */
   }
   .social button {
     margin-left: 5%;
     transform: scale(1);
+    height: 20px;
   }
   .social:last-child {
     margin-right: 10%;
@@ -612,17 +617,14 @@ footer .links a:first-child {
 }
 
 @media only screen and (min-width: 1281px) {
-  .footer__logo-insure {
-    width: 28vw;
-  }
   main h3 {
     font-size: 1.7em;
-}
+  }
   main hr {
     margin-top: 100px;
     width: 156px;
     margin-left: 165px;
-}
+  }
   .site-navbar {
     padding: 30px 165px;
   }
@@ -674,9 +676,19 @@ footer .links a:first-child {
   }
   /* footer */
   .footer__logo-insure {
-    margin-top: 8%;
+    margin-top: 70px;
+    width: 28vw;
   }
   .main__features {
     margin: 22px 165px;
+  }
+  .logo_social-container {
+    height: 15vh;
+  }
+  .footer__logo {
+    height: 21vh;
+  }
+  .footer__links {
+    width: 93%;
   }
 }
