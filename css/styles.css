@@ -464,6 +464,7 @@ footer .links a:first-child {
   }
   .header-container {
     min-height: 660px;
+    padding-top: 70px;
   }
   .header__main {
     min-height: 600px;
