@@ -401,6 +401,9 @@ footer .links a:first-child {
   body {
     overflow-y: visible !important;
   }
+  #main-nav .main-nav-item a:hover {
+    color:  hsl(270, 9%, 17%);
+  }
   .main__intro {
     padding-top: 10%;
   }
