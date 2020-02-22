@@ -1,10 +1,10 @@
 # Frontend Mentor - Insure landing page
 https://insure-landing-rc.netlify.com/
-![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
+
 
 ## Welcome! 👋
+ This landing page challenge was a trio effort by Sarah Hassan , Chamu Mutezva and Ranko.
 
-Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
