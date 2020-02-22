@@ -371,7 +371,10 @@ footer .links a:first-child {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) { 
+  body {
+    overflow-y: visible !important;
+  }
   .main__intro {
     padding-top: 10%;
   }
