@@ -29,16 +29,16 @@
     <!-- start navbar -->
     <header class="site-navbar">
       <div class="logo-container">
-        <img src="images/logo.svg" alt="Insure company logo" />
+        <a href="#"><img src="images/logo.svg" alt="Insure company logo"/></a>
       </div>
       <!-- start navigation menu -->
       <nav id="main-nav" class="hide">
         <ul>
-          <li class="main-nav-item">How we work</li>
-          <li class="main-nav-item">blog</li>
-          <li class="main-nav-item">account</li>
+          <li class="main-nav-item"><a href="#how-work">How we work</a></li>
+          <li class="main-nav-item"><a href="#">blog</a></li>
+          <li class="main-nav-item"><a href="#">account</a></li>
           <li class="main-nav-item">
-            <button class="primary-btn nav-btn" type="button">View plans</button>
+            <a class="primary-btn nav-btn" href="#plans">View plans</a>
           </li>
         </ul>
       </nav>
@@ -97,7 +97,7 @@
           <h1>We’re different</h1>
         </div>
         <!-- start features -->
-        <div class="main__features">
+        <div class="main__features" id="plans">
           <div class="process">
             <img src="images/icon-snappy-process.svg" alt="Process icon" />
             <h3>Snappy Process</h3>
@@ -125,7 +125,7 @@
         </div>
         <!-- end features -->
         <div class="main__how">
-          <div class="how-text">
+          <div class="how-text" id="how-work">
             <h2>Find out more about how we work</h2>
             <button class="primary-btn" type="button">How we work</button>
           </div>
@@ -143,10 +143,18 @@
               </div>
               <!-- start social links -->
               <div class="social">
-                <button><img src="images/icon-facebook.svg" alt="Facebook icon" /></button>
-                <button><img src="images/icon-twitter.svg" alt="Twitter icon" /></button>
-                <button><img src="images/icon-pinterest.svg" alt="Pinterest icon" /></button>
-                <button><img src="images/icon-instagram.svg" alt="Instagram icon" /></button>
+                <a href="https://www.facebook.com/"
+                  ><img src="images/icon-facebook.svg" alt="Facebook icon"
+                /></a>
+                <a href="https://www.twitter.com"
+                  ><img src="images/icon-twitter.svg" alt="Twitter icon"
+                /></a>
+                <a href="https://www.pinterest.com/"
+                  ><img src="images/icon-pinterest.svg" alt="Pinterest icon"
+                /></a>
+                <a href="https://www.instagram.com/"
+                  ><img src="images/icon-instagram.svg" alt="Instagram icon"
+                /></a>
               </div>
               <!-- end social links -->
             </div>

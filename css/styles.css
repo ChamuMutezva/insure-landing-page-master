@@ -165,26 +165,39 @@ h6 {
 
 .main-nav-item {
   margin: 23px 0;
+}
+
+.main-nav-item:last-child {
+  /* to fill full width */
+  align-self: stretch;
+}
+
+#main-nav .main-nav-item a {
   font-size: 1.1em;
   font-weight: 700;
   text-transform: uppercase;
   color: #d7d4d4;
-}
-
-.main-nav-item:last-child {
-  align-self: stretch;
-}
-
-.main-nav-item:hover {
-  color: #fffcff;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .main-nav-item .nav-btn {
   width: 100%;
+  /* to fill all width */
+  display: block;
   font-size: 15px;
   padding: 15px;
   margin: 0;
+}
+
+#main-nav .main-nav-item a:hover {
+  color: #fffcff;
+  cursor: pointer;
+}
+
+#main-nav .main-nav-item .nav-btn:hover {
+  color: hsl(270, 9%, 17%);
+  cursor: pointer;
+  background-color: #fffcff;
 }
 
 /* Main section */
@@ -289,7 +302,7 @@ button.button:hover {
   margin-top: 36%;
 }
 
-.social button {
+.social a {
   margin-right: 5%;
   /* transform: scale(1.5);*/
   width: 20px;
@@ -413,23 +426,18 @@ footer .links a:first-child {
     height: inherit;
     justify-content: flex-end;
   }
-  #mobile-nav,
+
   .hamburger-icon,
   .close-icon {
     display: none;
   }
-  .intro-text {
-    padding: 95px 130px;
-  }
-  .intro-text p {
-    margin: 27px 0;
-  }
-  .main__features {
-    margin: 5% 15% 15%;
-  }
+
   #main-nav .main-nav-item {
     cursor: pointer;
     padding-right: 25px;
+  }
+
+  #main-nav .main-nav-item a {
     font-size: 14px;
     font-weight: 700;
     color: hsl(273, 4%, 51%);
@@ -444,6 +452,7 @@ footer .links a:first-child {
   #main-nav .main-nav-item:last-child {
     padding-right: 0;
   }
+
   #main-nav .nav-btn {
     padding: 10px;
     font-size: 12px;
@@ -454,6 +463,17 @@ footer .links a:first-child {
     color: #fffcff;
     background-color: #2b282f;
   }
+
+  .intro-text {
+    padding: 95px 130px;
+  }
+  .intro-text p {
+    margin: 27px 0;
+  }
+  .main__features {
+    margin: 5% 15% 15%;
+  }
+
   .footer__container {
     margin-top: 9%;
   }
@@ -620,7 +640,7 @@ footer .links a:first-child {
     justify-content: flex-end;
     /* gap: 10%; */
   }
-  .social button {
+  .social a {
     margin-left: 5%;
     transform: scale(1);
     height: 20px;
