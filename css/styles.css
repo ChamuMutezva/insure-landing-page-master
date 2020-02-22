@@ -15,7 +15,12 @@ p {
   line-height: 1.6em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'DM Serif Display', sans-serif;
 }
 
@@ -58,7 +63,8 @@ h1, h2, h3, h4, h5, h6 {
   position: unset;
 }
 
-.hamburger-icon, .close-icon {
+.hamburger-icon,
+.close-icon {
   opacity: 1;
   cursor: pointer;
 }
@@ -139,15 +145,18 @@ h1, h2, h3, h4, h5, h6 {
   top: 70px;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 25px;
   opacity: 1;
   background: #2b272f url(../images/bg-pattern-mobile-nav.svg) no-repeat right bottom;
   text-align: center;
   z-index: 20000;
+  /* to enable scroll in Y for iPhone 4 landscape viewport */
+  overflow-y: scroll;
 }
 
 #main-nav ul {
+  height: 100vh;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -207,7 +216,7 @@ h1 {
 h3 {
   font-size: 1em;
   font-weight: 400;
-  margin-bottom: 3%;  
+  margin-bottom: 3%;
 }
 
 .main__features {
@@ -217,7 +226,9 @@ h3 {
   row-gap: 5%;
 }
 
-.process, .prices, .people {
+.process,
+.prices,
+.people {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -226,7 +237,9 @@ h3 {
   text-align: center;
 }
 
-.process img, .prices img, .people img {
+.process img,
+.prices img,
+.people img {
   margin: 7% auto;
 }
 
@@ -371,7 +384,7 @@ footer .links a:first-child {
   }
 }
 
-@media screen and (min-width: 600px) { 
+@media screen and (min-width: 600px) {
   body {
     overflow-y: visible !important;
   }
@@ -392,13 +405,17 @@ footer .links a:first-child {
     height: 70px;
     padding: 0;
     background: transparent;
+    /* to hide scroll in y for medium, large screens */
+    overflow-y: unset;
   }
   #main-nav ul {
     flex-direction: row;
     height: inherit;
     justify-content: flex-end;
   }
-  #mobile-nav, .hamburger-icon, .close-icon {
+  #mobile-nav,
+  .hamburger-icon,
+  .close-icon {
     display: none;
   }
   .intro-text {
@@ -535,7 +552,9 @@ footer .links a:first-child {
   p {
     font-size: 1.2em;
   }
-  .process img, .prices img, .people img {
+  .process img,
+  .prices img,
+  .people img {
     margin: 10% 0;
     width: 24%;
   }
@@ -574,7 +593,9 @@ footer .links a:first-child {
     width: 80%;
     margin: auto;
   }
-  .process, .prices, .people {
+  .process,
+  .prices,
+  .people {
     text-align: left;
   }
   /* footer */
