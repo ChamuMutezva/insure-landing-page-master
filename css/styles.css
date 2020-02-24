@@ -50,6 +50,10 @@ h6 {
   -o-transition: display 0.2s linear, opacity 0.2s linear;
 }
 
+.hide-yscroll {
+  overflow-y: hidden;
+}
+
 /* Header section */
 
 .site-navbar {
@@ -397,7 +401,7 @@ footer .links a:first-child {
     overflow-y: visible !important;
   }
   #main-nav .main-nav-item a:hover {
-    color:  hsl(270, 9%, 17%);
+    color: hsl(270, 9%, 17%);
   }
   .main__intro {
     padding-top: 10%;
