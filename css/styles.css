@@ -315,12 +315,7 @@ button.button:hover {
 
 .logo_social-container {
   display: flex;
-  flex-direction: column;
-  /* background-color: hsl(0, 0%, 98%);
-  background-image: url(../images/bg-pattern-footer-mobile.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left top; */
+  flex-direction: column; 
   height: 31vh;
   width: 100%;
   margin-bottom: 6%;
