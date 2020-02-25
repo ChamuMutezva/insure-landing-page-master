@@ -315,7 +315,7 @@ button.button:hover {
 
 .logo_social-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   height: 31vh;
   width: 100%;
   margin-bottom: 6%;
@@ -410,7 +410,7 @@ footer .links a:first-child {
     flex-direction: row;
     padding: 30px 15px;
     position: fixed;
-    z-index: 10000;
+    z-index: 1000000;
   }
   #main-nav {
     display: block;
