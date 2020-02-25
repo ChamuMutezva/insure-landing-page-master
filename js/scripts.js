@@ -6,7 +6,8 @@ const body = document.body;
 
 console.log(navItems);
 
-const closeMobileNav = () => {
+const closeMobileNav = e => {
+  console.log(e);
   mobileNav.classList.add('hide');
   hamburgerIcon.classList.remove('hide');
   closeIcon.classList.add('hide');
@@ -14,7 +15,10 @@ const closeMobileNav = () => {
   body.classList.remove('hide-yscroll');
 };
 
-const openMobileNav = () => {
+const openMobileNav = e => {
+  // if (e.key === ' ' || e.key === 'Enter') {
+  // console.log(e);
+  // }
   mobileNav.classList.remove('hide');
   hamburgerIcon.classList.add('hide');
   closeIcon.classList.remove('hide');
@@ -26,10 +30,17 @@ hamburgerIcon.addEventListener('click', openMobileNav);
 
 closeIcon.addEventListener('click', closeMobileNav);
 
+mobileNav.addEventListener('click', e => {
+  if (e.target.nodeName.toLowerCase() === 'a') {
+    closeMobileNav();
+  }
+});
+
 console.log(hamburgerIcon);
 
 //When nav a tag has been clicked
 //the body must have a vertical scroll
-navItems.forEach(nav => {
-  nav.addEventListener('click', closeMobileNav);
-});
+// navItems.forEach(nav => {
+//   nav.addEventListener('click', closeMobileNav);
+//   nav.addEventListener('keypress', closeMobileNav);
+// });
