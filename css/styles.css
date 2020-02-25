@@ -13,6 +13,7 @@ body {
 
 p {
   line-height: 1.6em;
+  color: hsl(273, 4%, 51%);
 }
 
 h1,
@@ -106,6 +107,7 @@ h6 {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 1em;
+  color: #d3d3d3;
 }
 
 .horizontal-line {
@@ -313,6 +315,12 @@ button.button:hover {
   border: 0;
 }
 
+.social a:hover {
+  opacity: 0.4;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
 .logo_social-container {
   display: flex;
   flex-direction: column;
@@ -353,6 +361,7 @@ button.button:hover {
 .footer__links h3 {
   font-family: 'Karla', sans-serif;
   margin-bottom: 0;
+  color: hsl(273, 4%, 51%);
 }
 
 .links {
@@ -379,8 +388,13 @@ footer img {
   margin: 0 auto 13%;
   text-decoration: none;
   list-style: none;
-  color: black;
+  color: #333;
   font-weight: 600;
+  font-size: 15px;
+}
+
+.links a:hover {
+  text-decoration: underline;
 }
 
 footer .links a:first-child {
@@ -400,8 +414,9 @@ footer .links a:first-child {
   body {
     overflow-y: visible !important;
   }
-  #main-nav .main-nav-item a:hover {
-    color: hsl(270, 9%, 17%);
+  #main-nav .main-nav-item .nav-btn:hover {
+    background-color: hsl(270, 9%, 17%);
+    color: #fffcff;
   }
   .main__intro {
     padding-top: 10%;
@@ -572,7 +587,7 @@ footer .links a:first-child {
     font-size: 2em;
   }
   p {
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
   }
   .process img,
   .prices img,
