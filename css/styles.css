@@ -196,7 +196,7 @@ h6 {
 }
 
 #main-nav .main-nav-item a:hover {
-  color: #fffcff;
+  color: hsl(270, 9%, 17%);
   cursor: pointer;
 }
 
