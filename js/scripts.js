@@ -16,9 +16,6 @@ const closeMobileNav = e => {
 };
 
 const openMobileNav = e => {
-  // if (e.key === ' ' || e.key === 'Enter') {
-  // console.log(e);
-  // }
   mobileNav.classList.remove('hide');
   hamburgerIcon.classList.add('hide');
   closeIcon.classList.remove('hide');
