@@ -146,7 +146,7 @@ h6 {
   width: 20%;
 }
 
-#main-nav {
+.main-nav {
   position: absolute;
   top: 70px;
   right: 0;
@@ -161,7 +161,7 @@ h6 {
   overflow-y: scroll;
 }
 
-#main-nav ul {
+.main-nav ul {
   height: 100vh;
   list-style: none;
   display: flex;
@@ -178,7 +178,7 @@ h6 {
   align-self: stretch;
 }
 
-#main-nav .main-nav-item a {
+.main-nav .main-nav-item a {
   font-size: 1.1em;
   font-weight: 700;
   text-transform: uppercase;
@@ -195,12 +195,12 @@ h6 {
   margin: 0;
 }
 
-#main-nav .main-nav-item a:hover {
-  color: hsl(270, 9%, 17%);
+.main-nav .main-nav-item a:hover {
+  color: hsl(0, 0%, 70%);
   cursor: pointer;
 }
 
-#main-nav .main-nav-item .nav-btn:hover {
+.main-nav .main-nav-item .nav-btn:hover {
   color: hsl(270, 9%, 17%);
   cursor: pointer;
   background-color: #fffcff;
@@ -414,7 +414,7 @@ footer .links a:first-child {
   body {
     overflow-y: visible !important;
   }
-  #main-nav .main-nav-item .nav-btn:hover {
+  .main-nav .main-nav-item .nav-btn:hover {
     background-color: hsl(270, 9%, 17%);
     color: #fffcff;
   }
@@ -427,7 +427,7 @@ footer .links a:first-child {
     position: fixed;
     z-index: 1000000;
   }
-  #main-nav {
+  .main-nav {
     display: block;
     position: relative;
     top: 0;
@@ -438,7 +438,7 @@ footer .links a:first-child {
     /* to hide scroll in y for medium, large screens */
     overflow-y: unset;
   }
-  #main-nav ul {
+  .main-nav ul {
     flex-direction: row;
     height: inherit;
     justify-content: flex-end;
@@ -449,34 +449,41 @@ footer .links a:first-child {
     display: none;
   }
 
-  #main-nav .main-nav-item {
+  .main-nav .main-nav-item {
     cursor: pointer;
     padding-right: 25px;
   }
 
-  #main-nav .main-nav-item a {
+  .main-nav .main-nav-item a {
     font-size: 14px;
     font-weight: 700;
     color: hsl(273, 4%, 51%);
     text-transform: uppercase;
   }
+
+  .main-nav .main-nav-item a:hover {
+    color: hsl(270, 9%, 17%);
+  }
+
   .main-nav-item:last-child {
     align-self: auto;
   }
-  #main-nav .main-nav-item:hover {
+
+  .main-nav .main-nav-item:hover {
     color: #2b282f;
   }
-  #main-nav .main-nav-item:last-child {
+
+  .main-nav .main-nav-item:last-child {
     padding-right: 0;
   }
 
-  #main-nav .nav-btn {
+  .main-nav .nav-btn {
     padding: 10px;
     font-size: 12px;
     color: hsl(270, 9%, 17%);
     border: 2px solid hsl(270, 9%, 17%);
   }
-  #main-nav .nav-btn:hover {
+  .main-nav .nav-btn:hover {
     color: #fffcff;
     background-color: #2b282f;
   }
@@ -512,13 +519,13 @@ footer .links a:first-child {
   .site-navbar {
     padding: 30px 100px;
   }
-  #main-nav {
+  .main-nav {
     width: 80%;
   }
-  #main-nav .main-nav-item {
+  .main-nav .main-nav-item {
     padding-right: 45px;
   }
-  #main-nav .nav-btn {
+  .main-nav .nav-btn {
     padding: 10px 25px;
   }
   .header-container {
